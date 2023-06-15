@@ -1,0 +1,435 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Play&family=Poppins&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+
+/* Global */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(7, 6, 34);
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(7, 6, 34, 0.405);
+    border-radius: 50px 50px 50px 50px;
+    backdrop-filter: blur(30px);
+}
+
+.navbar .navbar-toggler {
+    background-color: white;
+}
+
+.navbar .navbar-brand {
+    font-family: 'Send Flowers', cursive;
+    color: rgb(227, 227, 227);
+    font-size: 2.5em;
+}
+
+.navbar ul li a {
+    font-size: 1.2em;
+    color: rgb(227, 227, 227);
+    transition: .3s all;
+}
+
+.navbar ul li:hover a{
+    color: yellow;
+    transform: scale(1.1);
+}
+
+.navbar a.nav-link.active {
+    color: yellow !important;
+    transform: scale(1.1);
+}
+
+/* Preloader */
+section.preloader{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(7, 6, 34);
+	pointer-events: none;
+	animation: fadeout .5s linear forwards;
+	animation-delay: 5s;
+    z-index: 99999;
+}
+
+@keyframes fadeout{
+	0%{
+		opacity: 1;
+	}100%{
+		opacity: 0;
+	}
+}
+
+.loader{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: rgb(11, 7, 99);
+}
+
+.count{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 4vw;
+	color: #fff;
+	font-weight: bold;
+	mix-blend-mode: difference;
+	text-align: center;
+}
+
+.welcome{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+}
+
+/* Off Canvas */
+.offcanvas {
+    background-color: rgba(7, 6, 34, 0.186);
+    color: white;
+    backdrop-filter: blur(30px);
+}
+
+.offcanvas .btn-close {
+    background-color: white;
+    width: 15px;
+    padding: 15px;
+}
+
+.offcanvas.show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1050;
+    visibility: visible;
+    overflow-y: auto;
+    transition: 1s all;
+}
+  
+.offcanvas.show .offcanvas-header {
+    justify-content: flex-start;
+}
+  
+.offcanvas.show .offcanvas-header .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 10px;
+}
+
+.offcanvas .offcanvas-body form .btn {
+    transition: .3s all;
+    border: none;
+}
+
+.offcanvas .offcanvas-body form .btn:hover {
+    background-color: white;
+    color: red;
+}
+
+.offcanvas .row {
+    height: 90%;
+}
+
+/* Jumbotron */
+.jumbotron {
+    margin-top: 100px;
+    padding-top: 80px;
+    height: 80vh;
+    background-image: linear-gradient(rgb(7, 6, 34), rgb(11, 7, 99));
+    color: rgb(227, 227, 227);
+}
+
+.jumbotron h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.jumbotron p {
+    font-size: 1.4em;
+}
+
+/* about */
+.about {
+    padding-top: 80px;
+    background-color: rgb(11, 7, 99);
+    color: rgb(227, 227, 227);
+}
+
+@keyframes slideIn {
+    0% {
+      transform: translateY(-25px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+
+.about .profile {
+    animation: slideIn 1s ease-in-out infinite alternate-reverse;
+    border-radius: 50px 200px 50px 200px;  
+}
+
+.about h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.about .small {
+    font-size: 1em;
+}
+
+.about p {
+    font-size: 1.3em;
+}
+
+.about h5 {
+    color: yellow;
+}
+
+.about h3 {
+    font-family: 'Unica One', cursive;
+    font-size: 2.3em;
+}
+
+.about .col-md-4 .card {
+    background-color: rgb(227, 227, 227);
+    color: rgb(11, 7, 99);
+    border-radius: 10px;
+}
+
+.about .br {
+    border-left: 3px solid yellow;
+}
+
+/* Project */
+.project {
+    padding-top: 80px;
+    background-color: rgb(11, 7, 99);
+    color: white;
+}
+
+.project h2 {
+    font-size: 3em;
+    font-weight: bold;
+    border-bottom: 3px solid yellow;
+    width: 20%;
+}
+
+.project img {
+    border-radius: 30px;
+}
+
+.project .span {
+    background-color: rgba(0, 0, 0, 0.351);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    overflow: hidden;
+    opacity: 0;
+    transition: .3s all;
+}
+
+.project .span:hover {
+    opacity: 1;
+}
+
+.project .span a {
+    transform: translateY(150px);
+    transition: .5s all;
+}
+
+.project .span:hover a {
+    transform: translateY(0);
+}
+
+.project .span a i {
+    transition: .3s all;
+}
+
+.project .span a:hover i {
+    color: yellow;
+    transform: translateX(20px);
+}
+
+.project .span h5 {
+    transform: translateY(-150px);
+    transition: .5s all;
+}
+
+.project .span:hover h5 {
+    background-color: white;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
+    transform: translateY(0);
+}
+
+.project .span a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Certificate */
+.certificate-gallery {
+    padding-top: 80px;
+    background-image: linear-gradient(rgb(11, 7, 99),rgb(7, 6, 34));
+}
+
+.certificate-gallery span {
+    background-color: rgba(0, 0, 0, 0.51);
+    transform: translateY(540px);
+    transition: .5s all;
+}
+
+.certificate-gallery .card:hover span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.certificate-gallery span a {
+    color: white;
+    font-size: 4em;
+    transition: .3s all;
+}
+
+.certificate-gallery span a:hover {
+    color: yellow;
+    transform: scale(.9);
+}
+
+.certificate-gallery h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(227, 227, 227);
+    border-bottom: 3px solid yellow;
+    width: 40%;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(7, 6, 34);
+    color: rgb(227, 227, 227);
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+}
+
+.footer .col-lg-2 a {
+    transition: .2s all;
+}
+
+.footer .col-lg-2 p a:hover {
+    color: yellow;
+    transform: scale(1.1);
+}
+
+.footer .rows {
+    background-color: rgb(11, 7, 99);
+    border-radius: 30px;
+    transition: .3s all;
+}
+
+.footer .rows:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px 2px rgba(4, 4, 14, 0.586);
+    background-image: linear-gradient(rgb(11, 7, 99),rgb(51, 48, 111));
+}
+
+.footer .rows .link a {
+    font-size: 2em;
+}
+
+/* Responsive Breakpoint */
+/* Mobile */
+@media (max-width: 576px) {
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .jumbotron h1 {
+        font-size: 2em;
+    }
+
+    .about .br {
+        border-left: none;
+    }
+
+    .project h2 {
+        font-size: 2em;
+        font-weight: bold;
+        border-bottom: 3px solid yellow;
+        width: 40%;
+    }
+
+    .certificate-gallery h2 {
+        font-size: 2em;
+        font-weight: bold;
+        color: rgb(227, 227, 227);
+        border-bottom: 3px solid yellow;
+        width: 80%;
+    }
+
+    .footer .col-lg-5 p {
+        text-align: center;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    .jumbotron h1 {
+        font-size: 2.5em;
+    }
+
+    .about .br {
+        border-left: none;
+    }
+
+    .project h2 {
+        font-size: 2em;
+        font-weight: bold;
+        border-bottom: 3px solid yellow;
+        width: 30%;
+    }
+
+    .certificate-gallery h2 {
+        font-size: 2em;
+        font-weight: bold;
+        color: rgb(227, 227, 227);
+        border-bottom: 3px solid yellow;
+        width: 60%;
+    }
+
+    .footer .col-lg-5 p {
+        text-align: center;
+    }
+}
+
+
+
+
+

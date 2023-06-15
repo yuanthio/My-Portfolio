@@ -368,6 +368,10 @@ section.preloader{
 /* Mobile */
 @media (max-width: 576px) {
 
+    .count{
+        font-size: 15vw;
+    }
+
     .navbar {
         padding: 10px;
     }

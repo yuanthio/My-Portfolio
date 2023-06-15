@@ -389,18 +389,34 @@ section.preloader{
     }
 
     .about h2 {
-        font-size: 2em;
+        font-size: 1.7em;
+    }
+
+    .about h5 {
+        font-size: 1.3em
+    }
+
+    .about h3 {
+        font-size: 1.9em;
+    }
+
+    .about h4 {
+        font-size: 1.5;
+    }
+
+    .about p {
+        font-size: 1.1em;
     }
 
     .project h2 {
-        font-size: 2em;
+        font-size: 1.7em;
         font-weight: bold;
         border-bottom: 3px solid yellow;
         width: 40%;
     }
 
     .certificate-gallery h2 {
-        font-size: 2em;
+        font-size: 1.7em;
         font-weight: bold;
         color: rgb(227, 227, 227);
         border-bottom: 3px solid yellow;

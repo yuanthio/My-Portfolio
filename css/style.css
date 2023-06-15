@@ -372,12 +372,20 @@ section.preloader{
         padding: 10px;
     }
 
+    .navbar .navbar-brand {
+        font-size: 2em;
+    }
+
     .jumbotron h1 {
         font-size: 2em;
     }
 
     .about .br {
         border-left: none;
+    }
+
+    .about h2 {
+        font-size: 2em;
     }
 
     .project h2 {
@@ -393,6 +401,10 @@ section.preloader{
         color: rgb(227, 227, 227);
         border-bottom: 3px solid yellow;
         width: 80%;
+    }
+
+    .certificate-gallery span a {
+        font-size: 3em;
     }
 
     .footer .col-lg-5 p {

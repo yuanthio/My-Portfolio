@@ -39,12 +39,12 @@ body {
 }
 
 .navbar ul li:hover a{
-    color: yellow;
+    color: rgb(240, 189, 123);
     transform: scale(1.1);
 }
 
 .navbar a.nav-link.active {
-    color: yellow !important;
+    color: rgb(240, 189, 123) !important;
     transform: scale(1.1);
 }
 
@@ -145,8 +145,7 @@ section.preloader{
 }
 
 .offcanvas .offcanvas-body form .btn:hover {
-    background-color: white;
-    color: red;
+    transform: scale(1.1);
 }
 
 .offcanvas .row {
@@ -162,13 +161,66 @@ section.preloader{
     color: rgb(227, 227, 227);
 }
 
+.jumbotron .enkapsulasi {
+    width: 100%;
+}
+
 .jumbotron h1 {
     font-size: 4em;
     font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    color: rgba(225,225,225, .01);
+    background-image: url("../img/bg-text.jpg");
+    background-repeat: repeat;
+    background-size: 1200px;
+    -webkit-background-clip: text;
+    animation: animate 15s ease-in-out infinite;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
 }
 
-.jumbotron p {
-    font-size: 1.4em;
+@keyframes animate {
+    0%, 100% {
+      background-position: left top;
+    }
+    25%{
+      background-position: right bottom;
+     }
+    50% {
+      background-position: left bottom;
+    }
+    75% {
+      background-position: right top;
+    }   
+}
+
+.jumbotron h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.jumbotron .download a {
+    color: rgb(11, 7, 99);
+    font-weight: bold;
+    background-color: rgb(240, 189, 123);
+    width: 13%;
+    transition: .3s all;
+}
+
+.jumbotron .download a:hover {
+    background-color: rgb(11, 7, 99);
+    box-shadow: 0 0 30px 2px rgb(240, 189, 123);
+    color: white;
+}
+
+.jumbotron .download a i {
+    transition: .3s all;
+}
+
+.jumbotron .download a:hover i {
+    transform: translateX(10px);
 }
 
 /* about */
@@ -206,7 +258,7 @@ section.preloader{
 }
 
 .about h5 {
-    color: yellow;
+    color: rgb(240, 189, 123);
 }
 
 .about h3 {
@@ -221,7 +273,7 @@ section.preloader{
 }
 
 .about .br {
-    border-left: 3px solid yellow;
+    border-left: 3px solid rgb(240, 189, 123);
 }
 
 /* Project */
@@ -234,7 +286,7 @@ section.preloader{
 .project h2 {
     font-size: 3em;
     font-weight: bold;
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid rgb(240, 189, 123);
     width: 20%;
 }
 
@@ -269,7 +321,7 @@ section.preloader{
 }
 
 .project .span a:hover i {
-    color: yellow;
+    color: rgb(240, 189, 123);
     transform: translateX(20px);
 }
 
@@ -299,9 +351,9 @@ section.preloader{
 }
 
 .certificate-gallery span {
-    background-color: rgba(0, 0, 0, 0.51);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.51),rgb(9, 6, 75));
     transform: translateY(540px);
-    transition: .5s all;
+    transition: .3s all;
 }
 
 .certificate-gallery .card:hover span {
@@ -316,7 +368,7 @@ section.preloader{
 }
 
 .certificate-gallery span a:hover {
-    color: yellow;
+    color: rgb(240, 189, 123);
     transform: scale(.9);
 }
 
@@ -324,7 +376,7 @@ section.preloader{
     font-size: 3em;
     font-weight: bold;
     color: rgb(227, 227, 227);
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid rgb(240, 189, 123);
     width: 40%;
 }
 
@@ -344,7 +396,7 @@ section.preloader{
 }
 
 .footer .col-lg-2 p a:hover {
-    color: yellow;
+    color: rgb(240, 189, 123);
     transform: scale(1.1);
 }
 
@@ -368,6 +420,10 @@ section.preloader{
 /* Mobile */
 @media (max-width: 576px) {
 
+    .jumbotron {
+        height: 40vh;
+    }
+
     .count{
         font-size: 15vw;
     }
@@ -382,6 +438,19 @@ section.preloader{
 
     .jumbotron h1 {
         font-size: 2em;
+    }
+
+    .jumbotron h1 i {
+        display: none;
+    }
+
+    .jumbotron .download a {
+        width: 50%;
+    }
+
+    .jumbotron h2 {
+        font-size: 1.7em;
+        font-weight: bold;
     }
 
     .about .br {
@@ -411,7 +480,7 @@ section.preloader{
     .project h2 {
         font-size: 1.7em;
         font-weight: bold;
-        border-bottom: 3px solid yellow;
+        border-bottom: 3px solid rgb(240, 189, 123);
         width: 40%;
     }
 
@@ -419,7 +488,7 @@ section.preloader{
         font-size: 1.7em;
         font-weight: bold;
         color: rgb(227, 227, 227);
-        border-bottom: 3px solid yellow;
+        border-bottom: 3px solid rgb(240, 189, 123);
         width: 80%;
     }
 
@@ -433,8 +502,17 @@ section.preloader{
 }
 
 @media (min-width: 576px) and (max-width: 992px) {
+    
+    .jumbotron {
+        height: 50vh;
+    }
+
     .jumbotron h1 {
         font-size: 2.5em;
+    }
+
+    .jumbotron .download a {
+        width: 30%;
     }
 
     .about .br {
@@ -444,7 +522,7 @@ section.preloader{
     .project h2 {
         font-size: 2em;
         font-weight: bold;
-        border-bottom: 3px solid yellow;
+        border-bottom: 3px solid rgb(240, 189, 123);
         width: 30%;
     }
 
@@ -452,7 +530,7 @@ section.preloader{
         font-size: 2em;
         font-weight: bold;
         color: rgb(227, 227, 227);
-        border-bottom: 3px solid yellow;
+        border-bottom: 3px solid rgb(240, 189, 123);
         width: 60%;
     }
 

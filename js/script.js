@@ -1,4 +1,4 @@
-// Owl Carousel
+// Owl Carousel Jquery
 var owl = $('.owl-carousel');
 owl.owlCarousel({
     loop:true,
@@ -25,27 +25,6 @@ $('.play').on('click',function(){
 $('.stop').on('click',function(){
     owl.trigger('stop.owl.autoplay')
 })
-
-// Preloader 
-document.addEventListener("DOMContentLoaded", function() {
-    let hasAnimated = sessionStorage.getItem('hasAnimated');
-    
-    if (!hasAnimated) {
-        let count = 0;
-        let counter = setInterval(function() {
-            if (count <= 100) {
-            document.querySelector('.count').textContent = count + '%';
-            document.querySelector('.loader').style.width = count + '%';
-            count++;
-            } else {
-            clearInterval(counter);
-            sessionStorage.setItem('hasAnimated', true);
-            }
-        }, 50);
-    } else {
-      document.querySelector('.preloader').style.display = 'none'; 
-    }
-});
   
 
 // Contact Form
@@ -71,6 +50,37 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
     .catch(error => console.error('Error!', error.message))
 });
 
+// Preloader 
+document.addEventListener("DOMContentLoaded", function() {
+    let hasAnimated = sessionStorage.getItem('hasAnimated');
+    
+    if (!hasAnimated) {
+        let count = 0;
+        let counter = setInterval(function() {
+            if (count <= 100) {
+            document.querySelector('.count').textContent = count + '%';
+            document.querySelector('.loader').style.width = count + '%';
+            count++;
+            } else {
+            clearInterval(counter);
+            sessionStorage.setItem('hasAnimated', true);
+            }
+        }, 50);
+    } else {
+      document.querySelector('.preloader').style.display = 'none'; 
+    }
+});
+
+// Multiple Text
+document.addEventListener("DOMContentLoaded", function () {
+    let typed = new Typed('.typed-text', {
+        strings: ["Front End Web Developer.", "Freelancer.", "Hard worker.", "Person who never gives up."],
+        typeSpeed: 50,
+        backSpeed: 50,
+        backDelay: 2000,
+        loop: true
+    });
+});
 
 
 

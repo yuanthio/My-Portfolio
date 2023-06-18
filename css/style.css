@@ -504,6 +504,10 @@ section.preloader{
         font-size: 1.1em;
     }
 
+    .about .profile {
+        width: 350px; 
+    }
+
     .project h2 {
         font-size: 1.7em;
         font-weight: bold;
@@ -552,6 +556,10 @@ section.preloader{
 
     .about .br {
         border-left: none;
+    }
+
+    .about .profile {
+        width: 350px; 
     }
 
     .project h2 {

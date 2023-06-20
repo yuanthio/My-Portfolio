@@ -535,6 +535,7 @@ section.preloader{
 @media (max-width: 576px) {
 
     .jumbotron {
+        padding: 0 30px;
         height: 40vh;
     }
 
@@ -567,6 +568,10 @@ section.preloader{
         font-weight: bold;
     }
 
+    .about {
+        padding: 0 30px;
+    }
+
     .about .br {
         border-left: none;
     }
@@ -595,11 +600,19 @@ section.preloader{
         width: 350px; 
     }
 
+    .project {
+        padding: 0 30px;
+    }
+
     .project h2 {
         font-size: 1.7em;
         font-weight: bold;
         border-bottom: 3px solid rgb(240, 189, 123);
         width: 40%;
+    }
+
+    .certificate-gallery {
+        padding: 0 30px;
     }
 
     .certificate-gallery h2 {

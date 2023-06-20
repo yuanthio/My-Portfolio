@@ -102,6 +102,54 @@ section.preloader{
 	color: #000;
 }
 
+/* Acnchor Top */
+.anchor-top {
+    display: none;
+    font-size: 1.5em;
+    background-color: white;
+    color: rgb(11, 7, 99);
+    position: fixed;
+    z-index: 99999999;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    transition: .3s all;
+    opacity: 0;
+}
+
+.anchor-top:hover {
+    transform: scale(.9);
+    background-color: rgba(7, 6, 34, 0.405);
+    color: white;
+    border: 3px solid white;
+}
+
+.anchor-top.show {
+    animation: fadeIn .5s ease-in forwards;
+}
+
+.anchor-top.hide {
+    animation: fadeOut .5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+
 /* Off Canvas */
 .offcanvas {
     background-color: rgba(7, 6, 34, 0.186);
@@ -192,7 +240,7 @@ section.preloader{
 }
 
 .jumbotron h1 {
-    font-size: 4em;
+    font-size: 4.7em;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     margin: 0;
@@ -257,6 +305,12 @@ section.preloader{
     color: rgb(227, 227, 227);
 }
 
+.about .profile {
+    animation: slideIn 1s ease-in-out infinite alternate-reverse;
+    border-radius: 50px 200px 50px 200px; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
 @keyframes slideIn {
     0% {
       transform: translateY(-15px);
@@ -264,11 +318,6 @@ section.preloader{
     100% {
       transform: translateY(0);
     }
-}
-
-.about .profile {
-    animation: slideIn 1s ease-in-out infinite alternate-reverse;
-    border-radius: 50px 200px 50px 200px;  
 }
 
 .about h2 {
@@ -460,7 +509,7 @@ section.preloader{
     }
 
     .navbar .navbar-brand {
-        font-size: 2em;
+        font-size: 1.7em;
     }
 
     .jumbotron h1 {

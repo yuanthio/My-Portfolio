@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", function() {
 // Multiple Text
 document.addEventListener("DOMContentLoaded", function () {
     let typed = new Typed('.typed-text', {
-        strings: ["Front End Web Developer.", "Freelancer.", "Hard worker.", "Person who never gives up."],
+        strings: ["Frontend Web Developer.", "Freelancer.", "Hard worker.", "Person who never gives up."],
         typeSpeed: 50,
         backSpeed: 50,
         backDelay: 2000,
@@ -82,5 +82,21 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
+// Anchor Top
+document.addEventListener("DOMContentLoaded", function() {
+    var anchorTop = document.querySelector(".anchor-top");
+    var isShown = false;
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > 0 && !isShown) {
+            anchorTop.style.display = "block";
+            anchorTop.classList.remove("hide");
+            anchorTop.classList.add("show");
+            isShown = true;
+        } else if (window.scrollY === 0 && isShown) {
+            anchorTop.classList.remove("show");
+            anchorTop.classList.add("hide");
+            isShown = false;
+        }
+    });
+});

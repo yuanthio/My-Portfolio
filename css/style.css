@@ -109,7 +109,7 @@ section.preloader{
     background-color: white;
     color: rgb(11, 7, 99);
     position: fixed;
-    z-index: 99999999;
+    z-index: 999999;
     bottom: 0;
     right: 0;
     border-radius: 10px;
@@ -148,6 +148,44 @@ section.preloader{
     to {
       opacity: 0;
     }
+}
+
+/* Social media Start */
+.bg {
+    position: fixed;
+    z-index: 999999999;
+    width: 200px;
+    height: 100vh;
+    background-color: aqua;
+    transform: translateX(-200px);
+}
+
+.bg .social-media-start {
+    width: 200px;
+    background: transparent;
+    position: relative;
+}
+
+.bg .social-media-start li {
+    background-color: white;
+    text-decoration: none;
+    transform: translateX(35px);
+    list-style: none;
+    box-shadow: 0 0 10px 2px rgba(23, 23, 23, 0.701);
+    border-radius: 5px;
+    transition: .3s all;
+}
+
+.bg .social-media-start li i {
+    font-size: 1.3em;
+}
+
+.bg .social-media-start li:hover {
+    transform: translateX(135px);
+}
+
+.bg .social-media-start li a {
+    text-decoration: none;
 }
 
 /* Off Canvas */

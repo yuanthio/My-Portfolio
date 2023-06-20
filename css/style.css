@@ -535,7 +535,6 @@ section.preloader{
 @media (max-width: 576px) {
 
     .jumbotron {
-        padding: 0 30px;
         height: 40vh;
     }
 
@@ -570,6 +569,11 @@ section.preloader{
 
     .about {
         padding: 0 30px;
+        padding-top: 50px;
+    }
+
+    .about .profile {
+        border-radius: 50px 130px 50px 130px;
     }
 
     .about .br {

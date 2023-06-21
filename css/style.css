@@ -26,6 +26,10 @@ body {
     background-color: white;
 }
 
+.navbar .navbar-toggler-icon {
+    font-size: 12px; 
+}
+
 .navbar .navbar-brand {
     font-family: 'Send Flowers', cursive;
     color: rgb(227, 227, 227);
@@ -151,7 +155,7 @@ section.preloader{
 }
 
 /* Social media Start */
-.bg {
+.bg-social-media {
     position: fixed;
     z-index: 9999999;
     width: 200px;
@@ -160,13 +164,13 @@ section.preloader{
     transform: translateX(-200px);
 }
 
-.bg .social-media-start {
+.bg-social-media .social-media-start {
     width: 200px;
     background: transparent;
     position: relative;
 }
 
-.bg .social-media-start li {
+.bg-social-media .social-media-start li {
     background-color: white;
     text-decoration: none;
     transform: translateX(35px);
@@ -176,17 +180,41 @@ section.preloader{
     transition: .3s all;
 }
 
-.bg .social-media-start li i {
+.bg-social-media .social-media-start li i {
     font-size: 1.3em;
 }
 
-.bg .social-media-start li:hover {
+.bg-social-media .social-media-start li:hover {
     transform: translateX(135px);
 }
 
-.bg .social-media-start li a {
+.bg-social-media .social-media-start li a {
     text-decoration: none;
 }
+
+.animated.fadeOut {
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+
+.animated.fadeIn {
+    opacity: 1;
+    transition: opacity .3s ease-in;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated.fadeIn {
+    animation: fadeInAnimation .3s ease-in;
+}
+
 
 /* Off Canvas */
 .offcanvas {
@@ -563,7 +591,7 @@ section.preloader{
     }
 
     .jumbotron h2 {
-        font-size: 1.7em;
+        font-size: 1.4em;
         font-weight: bold;
     }
 
@@ -633,6 +661,10 @@ section.preloader{
 
     .footer .col-lg-5 p {
         text-align: center;
+    }
+
+    .footer .rows {
+        margin: 0 30px;
     }
 }
 

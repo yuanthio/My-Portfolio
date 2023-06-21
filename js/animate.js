@@ -100,3 +100,32 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+// none list bg-social-media
+var offcanvas = document.getElementById('offcanvasWithBothOptions');
+
+offcanvas.addEventListener('show.bs.offcanvas', function () {
+    var socialMediaListItems = document.querySelectorAll('.bg-social-media li');
+    socialMediaListItems.forEach(function (item) {
+        item.classList.add('fadeOut');
+    });
+});
+
+offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+    var socialMediaListItems = document.querySelectorAll('.bg-social-media li');
+    socialMediaListItems.forEach(function (item) {
+        item.classList.add('fadeIn');
+    });
+
+    setTimeout(function () {
+        socialMediaListItems.forEach(function (item) {
+            item.classList.remove('fadeOut', 'fadeIn');
+        });
+    }, 500);
+});
+
+
+
+
+
+

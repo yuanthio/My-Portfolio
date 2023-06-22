@@ -192,12 +192,12 @@ section.preloader{
     text-decoration: none;
 }
 
-.animated.fadeOut {
+.bg-social-media .animated.fadeOut {
     opacity: 0;
     transition: opacity .3s ease-in;
 }
 
-.animated.fadeIn {
+.bg-social-media .animated.fadeIn {
     opacity: 1;
     transition: opacity .3s ease-in;
 }
@@ -666,6 +666,7 @@ section.preloader{
     .footer .rows {
         margin: 0 30px;
     }
+
 }
 
 @media (min-width: 576px) and (max-width: 992px) {

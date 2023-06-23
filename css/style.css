@@ -416,6 +416,36 @@ section.preloader{
 
 .about .br {
     border-left: 3px solid rgb(240, 189, 123);
+    padding: 0 30px;
+}
+
+/* Services */
+.services {
+    padding-top: 30px;
+    background-color: rgb(11, 7, 99);
+    color: rgb(227, 227, 227);
+}
+
+.services h2 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.services h3 {
+    color: rgb(240, 189, 123);
+    font-weight: bold;
+}
+
+.services p {
+    font-size: 1.3em;
+}
+
+.services .small {
+    font-size: 1em;
+}
+
+.services .list-services p {
+    font-size: 1.1em;
 }
 
 /* Project */
@@ -468,6 +498,11 @@ section.preloader{
 }
 
 .project .span h5 {
+    background-color: white;
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+    color: black;
     transform: translateY(-150px);
     transition: .5s all;
 }
@@ -606,6 +641,7 @@ section.preloader{
 
     .about .br {
         border-left: none;
+        padding: 0 15px;
     }
 
     .about h2 {
@@ -630,6 +666,24 @@ section.preloader{
 
     .about .profile {
         width: 350px; 
+    }
+
+    .services {
+        padding: 0 30px;
+    }
+
+    .services img {
+        width: 100px;
+    }
+
+    .services .col-md-9 {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .services .col-md-3 {
+        display: flex;
+        justify-content: center;
     }
 
     .project {
@@ -693,10 +747,15 @@ section.preloader{
 
     .about .br {
         border-left: none;
+        padding: 0 15px;
     }
 
     .about .profile {
         width: 350px; 
+    }
+
+    .services img {
+        width: 130px;
     }
 
     .project h2 {

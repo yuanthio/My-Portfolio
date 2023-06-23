@@ -1,5 +1,5 @@
 // Owl Carousel Jquery
-var owl = $('.owl-carousel');
+let owl = $('.owl-carousel');
 owl.owlCarousel({
     loop:true,
     margin:10,
@@ -84,8 +84,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Anchor Top
 document.addEventListener("DOMContentLoaded", function() {
-    var anchorTop = document.querySelector(".anchor-top");
-    var isShown = false;
+    let anchorTop = document.querySelector(".anchor-top");
+    let isShown = false;
     
     window.addEventListener("scroll", function() {
         if (window.scrollY > 0 && !isShown) {
@@ -102,17 +102,17 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 // none list bg-social-media
-var offcanvas = document.getElementById('offcanvasWithBothOptions');
+let offcanvas = document.getElementById('offcanvasWithBothOptions');
 
 offcanvas.addEventListener('show.bs.offcanvas', function () {
-    var socialMediaListItems = document.querySelectorAll('.bg-social-media li');
+    let socialMediaListItems = document.querySelectorAll('.bg-social-media li');
     socialMediaListItems.forEach(function (item) {
         item.classList.add('fadeOut');
     });
 });
 
 offcanvas.addEventListener('hidden.bs.offcanvas', function () {
-    var socialMediaListItems = document.querySelectorAll('.bg-social-media li');
+    let socialMediaListItems = document.querySelectorAll('.bg-social-media li');
     socialMediaListItems.forEach(function (item) {
         item.classList.add('fadeIn');
     });

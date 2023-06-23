@@ -617,6 +617,10 @@ section.preloader{
         font-size: 2em;
     }
 
+    .jumbotron h2 {
+        padding: 0 30px;
+    }
+
     .jumbotron h1 i {
         display: none;
     }
@@ -670,6 +674,14 @@ section.preloader{
 
     .services {
         padding: 0 30px;
+    }
+
+    .services h2 {
+        font-size: 1.7em;
+    }
+
+    .services p {
+        font-size: 1.1em;
     }
 
     .services img {

@@ -239,6 +239,10 @@ section.preloader{
     transition: opacity .3s ease-in;
 }
 
+.bg-social-media a {
+    font-weight: bold;
+}
+
 @keyframes fadeInAnimation {
     from {
         opacity: 0;

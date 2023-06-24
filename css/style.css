@@ -402,7 +402,7 @@ section.preloader{
 
 /* about */
 .about {
-    padding-top: 50px;
+    padding: 120px 0;
     background-color: rgb(28, 23, 117);
     color: rgb(227, 227, 227);
     box-shadow: 0 0 15px 2px rgba(18, 18, 18, 0.238);
@@ -460,7 +460,7 @@ section.preloader{
 
 /* Services */
 .services {
-    padding-top: 30px;
+    padding: 120px 0;
     background-color: rgb(28, 23, 117);
     color: rgb(227, 227, 227);
     box-shadow: 0 0 15px 2px rgba(18, 18, 18, 0.238);
@@ -492,7 +492,7 @@ section.preloader{
 
 /* Project */
 .project {
-    padding-top: 30px;
+    padding: 120px 0;
     background-color: rgb(28, 23, 117);
     color: rgb(227, 227, 227);
     box-shadow: 0 0 15px 2px rgba(18, 18, 18, 0.238);
@@ -567,8 +567,9 @@ section.preloader{
 
 /* Certificate */
 .certificate-gallery {
+    padding: 120px 0;
     background-color: rgb(28, 23, 117);
-    color: rgb(227, 227, 227);
+    color: rgb(240, 189, 123);
     box-shadow: 0 0 15px 2px rgba(18, 18, 18, 0.238);
     border-radius: 30px;
     margin: 0 20px;
@@ -680,8 +681,7 @@ section.preloader{
     }
 
     .about {
-        padding: 0 30px;
-        padding-top: 50px;
+        padding: 120px 15px;
     }
 
     .about .profile {
@@ -718,7 +718,7 @@ section.preloader{
     }
 
     .services {
-        padding: 0 30px;
+        padding: 120px 15px;
     }
 
     .services h2 {
@@ -744,25 +744,22 @@ section.preloader{
     }
 
     .project {
-        padding: 0 30px;
+        padding: 120px 15px;
     }
 
     .project h2 {
         font-size: 1.7em;
         font-weight: bold;
-        border-bottom: 3px solid rgb(240, 189, 123);
         width: 40%;
     }
 
     .certificate-gallery {
-        padding: 0 30px;
+        padding: 120px 15px;
     }
 
     .certificate-gallery h2 {
         font-size: 1.7em;
         font-weight: bold;
-        color: rgb(227, 227, 227);
-        border-bottom: 3px solid rgb(240, 189, 123);
         width: 80%;
     }
 
@@ -818,15 +815,12 @@ section.preloader{
     .project h2 {
         font-size: 2em;
         font-weight: bold;
-        border-bottom: 3px solid rgb(240, 189, 123);
         width: 30%;
     }
 
     .certificate-gallery h2 {
         font-size: 2em;
         font-weight: bold;
-        color: rgb(227, 227, 227);
-        border-bottom: 3px solid rgb(240, 189, 123);
         width: 60%;
     }
 

@@ -113,6 +113,7 @@ offcanvas.addEventListener('show.bs.offcanvas', function () {
 
 offcanvas.addEventListener('hidden.bs.offcanvas', function () {
     let socialMediaListItems = document.querySelectorAll('.bg-social-media li');
+    
     socialMediaListItems.forEach(function (item) {
         item.classList.add('fadeIn');
     });

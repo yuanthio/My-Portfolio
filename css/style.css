@@ -723,6 +723,11 @@ section.preloader{
         border-radius: 50px 130px 50px 130px;
     }
 
+    .about .kotak-lonjong {
+        width: 70%;
+        height: 55px;
+    }
+
     .about .br {
         border-left: none;
         padding: 0 15px;

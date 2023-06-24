@@ -59,6 +59,11 @@ body .certificate-gallery hr {
     border-radius: 50px 50px 50px 50px;
 }
 
+.navbar.show {
+    background-color: rgba(28, 23, 117, 0.503);
+    backdrop-filter: blur(30px);
+}
+
 .navbar.scrolled {
     background-color: rgba(28, 23, 117, 0.503);
     border-radius: 50px 50px 50px 50px;
@@ -677,6 +682,12 @@ section.preloader{
 /* Responsive Breakpoint */
 /* Mobile */
 @media (max-width: 576px) {
+
+    .navbar ul li a {
+        font-size: 1em;
+        color: rgb(227, 227, 227);
+        transition: .3s all;
+    }
 
     .jumbotron {
         height: 60vh;

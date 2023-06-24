@@ -136,6 +136,18 @@ window.addEventListener('scroll', function() {
     }
 });
 
+// Navbar Collapse
+const navbar = document.querySelector('.navbar');
+const navbarToggler = document.querySelector('.navbar-toggler');
+
+navbarToggler.addEventListener('click', function() {
+    navbar.classList.toggle('show');
+});
+
+
+
+
+  
 
 
 

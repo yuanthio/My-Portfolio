@@ -124,6 +124,16 @@ offcanvas.addEventListener('hidden.bs.offcanvas', function () {
     }, 500);
 });
 
+// Navbar Scroll
+window.addEventListener('scroll', function() {
+    var navbar = document.getElementById('navbar-example2');
+
+    if (window.scrollY > 0) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
 
 
 

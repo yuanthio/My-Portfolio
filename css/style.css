@@ -54,9 +54,20 @@ body .certificate-gallery hr {
 
 /* Navbar */
 .navbar {
-    background-color: rgba(7, 6, 34, 0.405);
+    background-color: transparent;
+    transition: background-color 0.3s;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.navbar.scrolled {
+    background-color: rgba(28, 23, 117, 0.503);
     border-radius: 50px 50px 50px 50px;
     backdrop-filter: blur(30px);
+}
+
+/* Animation style */
+.navbar-scroll-animation {
+    transition: background-color 0.5s;
 }
 
 .navbar .navbar-toggler {
@@ -222,7 +233,7 @@ section.preloader{
 }
 
 .bg-social-media .social-media-start li:hover {
-    transform: translateX(135px);
+    transform: translateX(150px);
 }
 
 .bg-social-media .social-media-start li a {
@@ -417,8 +428,28 @@ section.preloader{
 .about .profile {
     animation: slideIn 1s ease-in-out infinite alternate-reverse;
     border-radius: 50px 200px 50px 200px; 
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+    /* box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);  */
 }
+
+.about .kotak-lonjong {
+    width: 70%;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #1e1e1e66;
+    filter: blur(6px);
+    padding: 10px;
+    animation: scale 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes scale {
+    0% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+  
 
 @keyframes slideIn {
     0% {
@@ -806,6 +837,11 @@ section.preloader{
     .about .br {
         border-left: none;
         padding: 0 15px;
+    }
+
+    .about .kotak-lonjong {
+        width: 40%;
+        height: 60px;
     }
 
     .about .profile {

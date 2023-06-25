@@ -451,7 +451,7 @@ section.preloader{
       transform: scale(1.2);
     }
     100% {
-      transform: translateY(0);
+      transform: scale(1);
     }
 }
   

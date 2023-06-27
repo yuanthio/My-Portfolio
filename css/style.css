@@ -819,6 +819,10 @@ section.preloader{
         padding: 120px 15px;
     }
 
+    .project .span h5 {
+        font-size: 1.2em;
+    }
+
     .project h2 {
         font-size: 1.7em;
         font-weight: bold;

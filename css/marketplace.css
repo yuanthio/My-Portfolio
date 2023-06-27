@@ -1,0 +1,520 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Play&family=Poppins&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+
+/* Global */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    /* background-color: rgb(7, 6, 34); */
+    background-color: rgb(11, 7, 99);
+}
+
+/* Navbar */
+.navbar {
+    background-color: transparent;
+    transition: background-color 0.3s;
+    border-radius: 50px 50px 50px 50px;
+}
+
+.navbar.show {
+    background-color: rgba(28, 23, 117, 0.503);
+    backdrop-filter: blur(30px);
+}
+
+.navbar.scrolled {
+    background-color: rgba(28, 23, 117, 0.503);
+    border-radius: 50px 50px 50px 50px;
+    backdrop-filter: blur(30px);
+}
+
+/* Animation style */
+.navbar-scroll-animation {
+    transition: background-color 0.5s;
+}
+
+.navbar .navbar-toggler {
+    background-color: white;
+}
+
+.navbar .navbar-toggler-icon {
+    font-size: 12px; 
+}
+
+.navbar .navbar-brand {
+    font-family: 'Send Flowers', cursive;
+    color: rgb(227, 227, 227);
+    font-size: 2.5em;
+}
+
+.navbar ul li a {
+    font-size: 1.2em;
+    color: rgb(227, 227, 227);
+    transition: .3s all;
+}
+
+.navbar ul li:hover a{
+    color: rgb(240, 189, 123);
+    transform: scale(1.1);
+}
+
+.navbar a.nav-link.active {
+    color: rgb(240, 189, 123) !important;
+    transform: scale(1.1);
+}
+
+/* Off Canvas */
+.offcanvas {
+    background-color: rgba(7, 6, 34, 0.186);
+    color: white;
+    backdrop-filter: blur(30px);
+}
+
+.offcanvas .btn-close {
+    background-color: white;
+    width: 15px;
+    padding: 15px;
+}
+
+.offcanvas.show {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1050;
+    visibility: visible;
+    overflow-y: auto;
+    transition: 1s all;
+}
+  
+.offcanvas.show .offcanvas-header {
+    justify-content: flex-start;
+}
+
+.offcanvas form input {
+    transition: .3s all;
+}
+
+.offcanvas form input:hover {
+    background-color: rgba(7, 6, 34, 0.405);
+    color: white;
+}
+
+.offcanvas form textarea {
+    transition: .3s all;
+}
+
+.offcanvas form textarea:hover {
+    background-color: rgba(7, 6, 34, 0.405);
+    color: white;
+}
+
+.offcanvas form input::placeholder {
+    color: #bcbcbc;
+}
+
+.offcanvas form textarea::placeholder {
+    color: #bcbcbc;
+}
+  
+.offcanvas.show .offcanvas-header .btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    margin: 10px;
+}
+
+.offcanvas .offcanvas-body form .btn {
+    transition: .3s all;
+    border: none;
+}
+
+.offcanvas .offcanvas-body form .btn:hover {
+    transform: scale(1.1);
+}
+
+.offcanvas .row {
+    height: 90%;
+}
+
+/* Social media Start */
+.bg-social-media {
+    position: fixed;
+    z-index: 9999999;
+    width: 200px;
+    height: 100vh;
+    background-color: aqua;
+    transform: translateX(-200px);
+}
+
+.bg-social-media .social-media-start {
+    width: 200px;
+    background: transparent;
+    position: relative;
+}
+
+.bg-social-media .social-media-start li {
+    background-color: white;
+    text-decoration: none;
+    transform: translateX(35px);
+    list-style: none;
+    box-shadow: 0 0 10px 2px rgba(23, 23, 23, 0.701);
+    border-radius: 5px;
+    transition: .3s all;
+}
+
+.bg-social-media .social-media-start li i {
+    font-size: 1.3em;
+}
+
+.bg-social-media .social-media-start li:hover {
+    transform: translateX(150px);
+}
+
+.bg-social-media .social-media-start li a {
+    text-decoration: none;
+}
+
+.bg-social-media .animated.fadeOut {
+    opacity: 0;
+    transition: opacity .3s ease-in;
+}
+
+.bg-social-media .animated.fadeIn {
+    opacity: 1;
+    transition: opacity .3s ease-in;
+}
+
+.bg-social-media a {
+    font-weight: bold;
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated.fadeIn {
+    animation: fadeInAnimation .3s ease-in;
+}
+
+/* Acnchor Top */
+.anchor-top {
+    display: none;
+    font-size: 1.5em;
+    background-color: white;
+    color: rgb(11, 7, 99);
+    position: fixed;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: .3s all;
+    opacity: 0;
+}
+
+.anchor-top:hover {
+    transform: scale(.9);
+    background-color: rgba(7, 6, 34, 0.405);
+    color: white;
+    border: 3px solid white;
+}
+
+.anchor-top.show {
+    animation: fadeIn .5s ease-in forwards;
+}
+
+.anchor-top.hide {
+    animation: fadeOut .5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+}
+
+/* Loader Page */
+.loader-page {
+    display: none;
+}
+
+.loader-page .loading {
+    width: 100%;
+    height: 100vh;
+    z-index: 999999999;
+    position: fixed;
+    background-color: #0000009a;
+}
+
+/* Jumbotron */
+.jumbotron {
+    padding-top: 80px;
+    height: 100vh;
+    background-image: linear-gradient(rgb(7, 6, 34), rgb(11, 7, 99));
+    color: rgb(227, 227, 227);
+}
+
+.jumbotron .enkapsulasi {
+    width: 70%;
+}
+
+.jumbotron h1 {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(225, 225, 225);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.356);
+    font-weight: 900;
+}
+
+.jumbotron p {
+    font-size: 1.3em;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.356);
+}
+
+.jumbotron .download a {
+    color: rgb(11, 7, 99);
+    font-weight: bold;
+    background-color: rgb(240, 189, 123);
+    border-radius: 20px;
+    font-size: 1.3em;
+    width: 20%;
+    letter-spacing: 2px;
+    border: 3px solid rgb(240, 189, 123);
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.304);
+    transition: .3s all;
+}
+
+.jumbotron .download a:hover {
+    background-color: rgb(11, 7, 99);
+    box-shadow: 0 0 30px 2px rgb(240, 189, 123);
+    color: rgb(240, 189, 123);
+}
+
+.jumbotron .download a i {
+    transition: .3s all;
+}
+
+.jumbotron .download a:hover i {
+    transform: translateX(10px);
+}
+
+/* Overview Arunika */
+.overview-marketplace {
+    color: rgb(227, 227, 227);
+    background-color: rgb(28, 23, 117);
+    padding: 120px 0;
+    box-shadow: 0 0 15px 2px rgba(18, 18, 18, 0.238);
+    border-radius: 30px;
+    margin: 0 20px;
+}
+
+.overview-marketplace .image img {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.304);
+}
+
+.overview-marketplace h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(240, 189, 123);
+}
+
+.overview-marketplace p {
+    font-size: 1.3em;
+}
+
+.overview-marketplace .skill, .button-links, .button-link {
+    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.304);
+    font-size: 1.3em;
+}
+
+.overview-marketplace .skill {
+    background-color: rgb(231, 231, 231);
+    color: rgb(11, 7, 99);
+    border-radius: 5px;
+}
+
+.overview-marketplace .button-link {
+    background-color: rgb(240, 189, 123);
+    color: rgb(28, 23, 117);
+    border-radius: 5px;
+    border: 3px solid rgb(240, 189, 123);
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s all;
+}
+
+.overview-marketplace .button-link:hover {
+    background-color: rgb(28, 23, 117);
+    color: rgb(240, 189, 123);
+    transform: translateY(-4px);
+}
+
+.overview-marketplace .button-links {
+    color: rgb(240, 189, 123);
+    border: 3px solid rgb(240, 189, 123);
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .3s all;
+}
+
+.overview-marketplace .button-links:hover {
+    background-color: rgb(240, 189, 123);
+    color: rgb(28, 23, 117);
+    transform: translateY(-4px);
+}
+
+/* Footer */
+.footer {
+    background-image: linear-gradient(rgb(11, 7, 99),rgb(7, 6, 34));
+    color: rgb(227, 227, 227);
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(227, 227, 227);
+}
+
+.footer .col-lg-2 a {
+    transition: .2s all;
+}
+
+.footer .col-lg-2 p a:hover {
+    color: rgb(240, 189, 123);
+    transform: scale(1.1);
+}
+
+.footer .rows {
+    background-color: rgb(28, 23, 117);
+    border-radius: 30px;
+    transition: .3s all;
+}
+
+.footer .rows:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 10px 2px rgba(4, 4, 14, 0.586);
+    background-image: linear-gradient(rgb(28, 23, 117),rgb(51, 48, 111));
+}
+
+.footer .rows .link a {
+    font-size: 2em;
+}
+
+/* Responsive Breakpoint */
+/* Mobile */
+@media (max-width: 576px) {
+
+    .navbar ul li a {
+        font-size: 1em;
+    }
+
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar .navbar-brand {
+        font-size: 1.7em;
+    }
+
+    .jumbotron {
+        height: 80vh;
+    }
+
+    .jumbotron h1 {
+        font-size: 2.7em;
+    }
+
+    .jumbotron p {
+        font-size: 1em;
+    }
+
+    .jumbotron .download a {
+        width: 70%;
+        font-size: 1em;
+    }
+
+    .overview-arunika {
+        padding: 120px 15px;
+    }
+
+    .overview-arunika h2 {
+        font-size: 1.7em;
+    }
+
+    .overview-arunika p {
+        font-size: 1em;
+    }
+
+    .overview-arunika .skill {
+        font-size: 1em;
+    }
+
+    .overview-arunika .button-links, .button-link {
+        font-size: 1em;
+        width: 50%;
+    }
+
+    .overview-arunika .button-link {
+        margin-bottom: 20px;
+    }
+
+    .footer .rows {
+        margin: 0 30px;
+    }
+}
+
+/* Tablet */
+@media (min-width: 576px) and (max-width: 992px) {
+
+    .jumbotron {
+        height: 60vh;
+    }
+
+    .jumbotron h1 {
+        font-size: 3em;
+    }
+
+    .jumbotron .download a {
+        width: 40%;
+        font-size: 1em;
+    }
+
+    .overview-arunika {
+        padding: 120px 15px;
+    }
+
+    .footer .rows {
+        margin: 0 30px;
+    }
+
+}

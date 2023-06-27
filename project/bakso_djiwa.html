@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yuanthio Virly | Projects Website Arunika Wedding</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/bakso_djiwa.css">
+    <!-- Aos On Scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top mt-3 mx-4" id="navbar-example2">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                Yuanthio Virly
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="../index.html#home">Home</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="../index.html#about">About</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="../index.html#services">Services</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="../index.html#project">Project</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" href="../index.html#certificate">Certificate</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <a class="nav-link" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Off Canvas -->
+    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-body">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-5 col-sm-8">
+                    <h2 class="text-center mb-4">Contact Me!</h2>
+                    <div class="alert alert-success alert-dismissible fade show my-alert" role="alert">
+                        <strong>Thank You!</strong> We have received your message
+                        <button type="button" class="btn-close btn-light" data-bs-dismiss="alert"
+                            aria-label="Close"></button>
+                    </div>
+                    <form name="yuanthio-contact-form">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Input Name"
+                                name="nama" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Input Email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phoneNumber" class="form-label">Phone Number</label>
+                            <input type="number" class="form-control" id="phoneNumber" placeholder="Input Phone Number"
+                                name="no_handphone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Input Message" name="pesan" required></textarea>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <button type="submit" style="width: 200px;" class="btn btn-danger mx-2 btn-kirim"><i
+                                    class="bi bi-send-fill me-2"></i>Send Message
+                            </button>
+                            <button class="btn btn-danger mx-2 btn-loading d-none" style="width: 200px;" type="button"
+                                disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Social Media start -->
+    <span class="bg-social-media d-flex align-items-center justify-content-end">
+        <ul class="social-media-start d-flex flex-column start-0">
+            <li class="whatsapp py-2 pe-2 text-end mb-2 animated">
+                <a href="https://api.whatsapp.com/send?phone=62895336035920" style="color: green;">
+                    Whatsapp
+                </a>
+                <i class="ms-3 fa-brands fa-whatsapp" style="color: green;"></i>
+            </li>
+            <li class="facebook py-2 pe-2 text-end mb-2 animated">
+                <a href="https://www.facebook.com/yuanthio.thio/" style="color: rgb(19, 67, 158);">
+                    Facebook
+                </a>
+                <i class="ms-3 fa-brands fa-facebook" style="color: rgb(19, 67, 158);"></i>
+            </li>
+            <li class="instagram py-2 pe-2 text-end mb-2 animated">
+                <a href="https://www.instagram.com/yuanthio_/" style="color: rgb(142, 18, 153);">
+                    Instagram
+                </a>
+                <i class="ms-3 fa-brands fa-square-instagram" style="color: rgb(142, 18, 153);"></i>
+            </li>
+            <li class="instagram py-2 pe-2 text-end mb-2 animated">
+                <a href="https://github.com/yuanthio" style="color: rgb(16, 16, 16);">
+                    Github
+                </a>
+                <i class="ms-3 fa-brands fa-square-github" style="color: rgb(16, 16, 16);"></i>
+            </li>
+            <li class="instagram py-2 pe-2 text-end mb-2 animated">
+                <a href="#" style="color: rgb(13, 117, 181);">
+                    Linkedln
+                </a>
+                <i class="ms-3 fa-brands fa-linkedin" style="color: rgb(13, 117, 181);"></i>
+            </li>
+        </ul>
+    </span>
+
+    <!-- Loader Page -->
+    <section class="loader-page">
+        <div class="loading d-flex justify-content-center align-items-center">
+            <img src="../img/loading-page.gif" width="100" alt="Loading Page">
+        </div>      
+    </section>
+
+    <!-- Anchor Top -->
+    <a href="#" class="anchor-top me-4 mb-4 px-3 py-2 show">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- Jumbotron -->
+    <section class="jumbotron d-flex justify-content-center align-items-center" id="home">
+        <div class="row text-center justify-content-center enkapsulasi">
+            <h1 data-aos="fade-down" data-aos-duration="2000">Bakso Djiwa</h1>
+            <p data-aos="fade-down" data-aos-duration="2000" class="text-light">This page contains a case study of the Bakso Djiwa website Project which includes a Project Overview, Tools Used, and Direct Links to the website.</p>
+            <div class="row download text-center justify-content-center mt-4">
+                <a data-aos="fade-up" data-aos-duration="500"
+                    href="https://baksodjiwa.000webhostapp.com/"
+                    class="btn text-uppercase">Live Link <i class="fa-solid fa-arrow-right-long ms-2"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Overview Project -->
+    <section class="overview-bakso-djiwa">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="image d-flex justify-content-center">
+                        <img src="../img/bakso_djiwa.png" class="img-fluid mb-5" alt="">
+                    </div> 
+                    <div class="row mb-5">
+                        <h2 class="mb-4">Project Overview</h2>
+                        <p>I am pleased to have the opportunity to provide a review of your project on the Bakso Djiwa website. A clean look and intuitive navigation make it easy for users to find the information they need. Responsive design also makes this website accessible via mobile devices. <br><br>                       
+                        The content on the Bakso Djiwa website is very informative and appetizing. Available information, such as a brief history of meatballs, the ingredients used, and the manufacturing process shown through attractive pictures, provides a clear picture of what Bakso Djiwa has to offer. Also, there is a full menu page with variations of meatballs and sauces accompanied by appetizing descriptions that make it easy for visitors to choose the dish they want. I added an online ordering feature, which allows customers to conveniently order meatballs through the website. In addition, integration with social media allows visitors to share their experiences with Bakso Djiwa and expands marketing reach. <br><br>                       
+                        Feel free to check out the Project by visiting the Direct Link.</p>
+                    </div>
+                    <div class="row mb-5">
+                        <h2 class="mb-4">Tools Used</h2>
+                        <div class="skills d-flex flex-wrap">
+                            <div class="skill px-4 py-2 me-4 mb-4">HTML</div>
+                            <div class="skill px-4 py-2 me-4 mb-4">CSS</div>
+                            <div class="skill px-4 py-2 me-4 mb-4">Bootstrap</div>
+                            <div class="skill px-4 py-2 me-4 mb-4">Javascript</div>
+                            <div class="skill px-4 py-2 me-4 mb-4">PHP</div>
+                            <div class="skill px-4 py-2 me-4 mb-4">Laravel</div>
+                            <div class="skill px-4 py-2 me-4 mb-4">Mysql</div>
+                            <div class="skill px-4 py-2 me-4 mb-4">GIT</div>
+                            <div class="skill px-4 py-2 me-4 mb-4">Github</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="mb-4">See Live</h2>
+                        <div class="button d-flex flex-wrap">
+                            <a href="https://baksodjiwa.000webhostapp.com/" class="button-link d-flex justify-content-center align-items-center px-4 py-2 me-4">
+                                <div>LIVE LINK</div>
+                            </a> 
+                            <a href="../index.html" class="button-links d-flex justify-content-center align-items-center px-4 py-2">
+                                <div>GO BACK</div>
+                            </a>                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" style="margin-top: 100px;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-5 mb-4">
+                    <a href="https://api.whatsapp.com/send?phone=62895336035920">
+                        <div class="rows text-center py-3">
+                            <span class="link fs-5">
+                                <i class="fa-brands fa-whatsapp me-2"></i>
+                                    Whatsapp
+                            </span>
+                        </div>
+                    </a>
+                    <p class="mt-5">© 2023 Yuanthio Virly</p>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6 mb-4">
+                    <h4 class="mb-3 fw-bold">Quick Links</h4>
+                    <p><a href="../index.html#home">Home</a></p>
+                    <p><a href="../index.html#about">About</a></p>
+                    <p><a href="../index.html#services">Services</a></p>
+                    <p><a href="../index.html#project">Project</a></p>
+                    <p><a href="../index.html#certificate">Certificate</a></p>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <h4 class="mb-3 fw-bold">Maps</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d857.5257881842748!2d106.82675804040345!3d-6.649550249448062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sid!2sid!4v1687615380749!5m2!1sid!2sid"
+                        style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+
+    <script src="../js/project.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4752e5dd73.js" crossorigin="anonymous"></script>
+
+    <!-- Aos On Scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Initialize Aos -->
+    <script>
+        AOS.init({
+            once: true
+        });
+    </script>
+
+</body>
+
+</html>

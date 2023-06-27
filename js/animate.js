@@ -33,6 +33,7 @@ const form = document.forms['yuanthio-contact-form']
 const btnKirim = document.querySelector('.btn-kirim');
 const btnLoading = document.querySelector('.btn-loading');
 const myAlert = document.querySelector('.my-alert');
+myAlert.classList.toggle('d-none');
 
 form.addEventListener('submit', e => {
 e.preventDefault();
@@ -47,8 +48,9 @@ fetch(scriptURL, { method: 'POST', body: new FormData(form)})
         form.reset();
         console.log('Success!', response);
     })
-    .catch(error => console.error('Error!', error.message))
+    .catch(error => console.error('Error!', error.message))   
 });
+
 
 // Preloader 
 document.addEventListener("DOMContentLoaded", function() {
@@ -144,11 +146,7 @@ navbarToggler.addEventListener('click', function() {
     navbar.classList.toggle('show');
 });
 
-
-
-
-  
-
-
-
-
+// Loading Page
+window.addEventListener('beforeunload', function() {
+    document.querySelector('.loader-page').style.display = 'block';
+});

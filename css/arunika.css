@@ -394,6 +394,29 @@ body {
     transform: translateY(-4px);
 }
 
+.overview-arunika .another-project img {
+    border-radius: 10px;
+}
+
+.overview-arunika .project {
+    border-radius: 10px;
+}
+
+.overview-arunika .project span {
+    border-radius: 50%;
+    background-color: rgb(240, 189, 123);
+    width: 110%;
+    height: 60vh;
+    transform: translateY(-50%) translateX(65%);
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.514);
+    transition: .4s all ease-in-out;
+}
+
+.overview-arunika .project:hover span {
+    transform: translateY(0) translateX(0);
+}
+
 /* Footer */
 .footer {
     background-image: linear-gradient(rgb(11, 7, 99),rgb(7, 6, 34));
@@ -488,6 +511,12 @@ body {
         margin-bottom: 20px;
     }
 
+    .overview-arunika .project span {
+        width: 110%;
+        height: 60vh;
+        transform: translateY(-50%) translateX(55%);
+    }
+
     .footer .rows {
         margin: 0 30px;
     }
@@ -511,6 +540,12 @@ body {
 
     .overview-arunika {
         padding: 120px 15px;
+    }
+
+    .overview-arunika .project span {
+        width: 110%;
+        height: 60vh;
+        transform: translateY(-50%) translateX(53%);
     }
 
     .footer .rows {

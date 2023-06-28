@@ -819,8 +819,12 @@ section.preloader{
         padding: 120px 15px;
     }
 
+    .project img {
+        border-radius: 20px;
+    }
+
     .project .span h5 {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .project h2 {
@@ -853,6 +857,7 @@ section.preloader{
 
 }
 
+/* Tablet */
 @media (min-width: 576px) and (max-width: 992px) {
 
     .count{

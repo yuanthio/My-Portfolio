@@ -90,10 +90,8 @@ window.addEventListener('beforeunload', function() {
     document.querySelector('.loader-page').style.display = 'block';
   });
   
-  window.addEventListener('pageshow', function(event) {
+window.addEventListener('pageshow', function(event) {
     if (event.persisted || (window.performance && performance.getEntriesByType('navigation')[0].type === 'back_forward')) {
-        // Halaman ditampilkan kembali setelah "undo" navigasi
-        // Sembunyikan atau hapus elemen animasi loading di sini
         document.querySelector('.loader-page').style.display = 'none';
     }
 });

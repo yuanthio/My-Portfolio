@@ -88,4 +88,9 @@ document.addEventListener("DOMContentLoaded", function() {
 // Loading Page
 window.addEventListener('beforeunload', function() {
     document.querySelector('.loader-page').style.display = 'block';
+  });
+  
+window.addEventListener('load', function() {
+    document.querySelector('.loader-page').style.display = 'none';
 });
+  

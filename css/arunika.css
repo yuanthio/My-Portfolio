@@ -520,6 +520,10 @@ body {
     .footer .rows {
         margin: 0 30px;
     }
+
+    .footer .col-lg-5 p {
+        text-align: center;
+    }
 }
 
 /* Tablet */
@@ -550,6 +554,10 @@ body {
 
     .footer .rows {
         margin: 0 30px;
+    }
+
+    .footer .col-lg-5 p {
+        text-align: center;
     }
 
 }

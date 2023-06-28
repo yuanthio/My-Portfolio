@@ -151,7 +151,7 @@ window.addEventListener('beforeunload', function() {
     document.querySelector('.loader-page').style.display = 'block';
   });
   
-window.addEventListener('load', function() {
+window.addEventListener('unload', function() {
     document.querySelector('.loader-page').style.display = 'none';
 });
   

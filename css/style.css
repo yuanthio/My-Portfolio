@@ -827,6 +827,10 @@ section.preloader{
         border-radius: 15px;
     }
 
+    .project .span:hover {
+        border-radius: 15px;
+    }
+
     .project .span h5 {
         font-size: 1em;
     }

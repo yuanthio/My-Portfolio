@@ -147,10 +147,15 @@ navbarToggler.addEventListener('click', function() {
 });
 
 // Loading Page
+window.addEventListener('beforeunload', function() {
+    document.querySelector('.loader-page').style.display = 'block';
+  });
+  
 window.addEventListener('pageshow', function(event) {
-    if (event.persisted) {
+    if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
         // Halaman ditampilkan kembali setelah "undo" navigasi
         // Sembunyikan atau hapus elemen animasi loading di sini
         document.querySelector('.loader-page').style.display = 'none';
     }
 });
+  

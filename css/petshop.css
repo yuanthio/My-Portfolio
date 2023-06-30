@@ -339,7 +339,6 @@ body {
 
 .overview-petshop .image img {
     border-radius: 10px;
-    box-shadow: 2px 2px 10px 3px rgba(0, 0, 0, 0.304);
 }
 
 .overview-petshop h2 {
@@ -402,19 +401,30 @@ body {
     border-radius: 10px;
 }
 
+.overview-petshop .project h3 {
+    font-size: 1em;
+    transition: .3s all;
+}
+
 .overview-petshop .project span {
     border-radius: 50%;
     background-color: rgb(240, 189, 123);
-    width: 110%;
-    height: 60vh;
-    transform: translateY(-50%) translateX(65%);
+    width: 30%;
+    height: 60%;
+    transform: translateY(-100%);
     color: rgb(255, 255, 255);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.514);
     transition: .4s all ease-in-out;
 }
 
 .overview-petshop .project:hover span {
-    transform: translateY(0) translateX(0);
+    transform: translateY(0);
+    width: 110%;
+    height: 60vh;
+}
+
+.overview-petshop .project:hover h3 {
+    font-size: 1.8em;
 }
 
 /* Footer */
@@ -474,7 +484,7 @@ body {
     }
 
     .jumbotron h1 {
-        font-size: 2.7em;
+        font-size: 1.5em;
     }
 
     .jumbotron p {
@@ -512,9 +522,7 @@ body {
     }
 
     .overview-petshop .project span {
-        width: 110%;
-        height: 60vh;
-        transform: translateY(-50%) translateX(55%);
+        transform: translateY(-110%);
     }
 
     .footer .rows {
@@ -547,9 +555,7 @@ body {
     }
 
     .overview-petshop .project span {
-        width: 110%;
-        height: 60vh;
-        transform: translateY(-50%) translateX(53%);
+        transform: translateY(-110%);
     }
 
     .footer .rows {

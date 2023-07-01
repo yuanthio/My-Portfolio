@@ -524,6 +524,10 @@ body {
         width: 50%;
     }
 
+    .overview-marketplace .button-links, .button-link {
+        width: 180px;
+    }
+
     .overview-marketplace .button-link {
         margin-bottom: 20px;
     }

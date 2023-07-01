@@ -520,6 +520,10 @@ body {
         margin-bottom: 20px;
     }
 
+    .overview-petshop .button-links, .button-link {
+        width: 180px;
+    }
+
     .overview-petshop .project span {
         transform: translateY(-110%);
     }

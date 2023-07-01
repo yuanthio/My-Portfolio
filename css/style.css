@@ -603,7 +603,6 @@ section.preloader{
 .project span {
     font-size: 6em;
     padding: 0 15px;
-    transition: .3s all;
 }
 
 /* Certificate */
@@ -824,7 +823,11 @@ section.preloader{
     }
 
     .project .btn {       
-        width: 155px;
+        width: 160px;
+    }
+
+    .project span {
+        font-size: 4em;
     }
 
     .certificate-gallery {

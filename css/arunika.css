@@ -520,6 +520,10 @@ body {
         margin-bottom: 20px;
     }
 
+    .overview-arunika .button-links, .button-link {
+        width: 180px;
+    }
+
     .overview-arunika .project span {
         transform: translateY(-110%);
     }

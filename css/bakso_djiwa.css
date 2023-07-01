@@ -520,6 +520,10 @@ body {
         margin-bottom: 20px;
     }
 
+    .overview-bakso-djiwa .button-links, .button-link {
+        width: 180px;
+    }
+
     .overview-bakso-djiwa .project span {
         transform: translateY(-110%);
     }
